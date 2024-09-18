@@ -3,3 +3,52 @@
 *{
     font-family: 'JetBrains Mono', monospace;
 }
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+[data-sonner-toaster] {
+
+}
+
+:where([data-sonner-toast][data-styled="true"]) {
+    padding: .9rem 1rem !important;
+    font-size: 1rem !important;
+    border-radius: 1rem !important;
+    border: unset !important;
+}
+
+:where([data-sonner-toast]):where([data-content]) {
+
+}
+
+:where([data-sonner-toast]):where([data-title]) {
+    font-weight: unset !important;
+}
+
+[data-rich-colors=true][data-sonner-toast][data-type=error] {
+    color: rgb(255 255 255) !important;
+    background-color: rgb(220 38 38) !important;
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+[data-rich-colors=true][data-sonner-toast][data-type=success] {
+    color: rgb(255 255 255) !important;
+    background-color: rgb(22 163 74) !important;
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+/*
+[data-rich-colors=true][data-sonner-toast][data-type=info] {
+    color: rgb(255 255 255) !important;
+    background-color: rgb(37 99 235) !important;
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+
+[data-rich-colors=true][data-sonner-toast][data-type=warning] {
+    color: rgb(255 255 255) !important;
+    background-color: rgb(202 138 4) !important;
+    border-color: rgba(255, 255, 255, 0) !important;
+}
+*/
