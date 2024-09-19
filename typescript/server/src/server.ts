@@ -7,7 +7,9 @@ import http from './configurations/http.js';
     try {
         await connection();
 
-        socket.on('connection', (io) => {
+        const io = socket.of('/api');
+
+        io.on('connection', (socket) => {
 
         });
 

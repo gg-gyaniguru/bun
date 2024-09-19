@@ -11,7 +11,9 @@ import http from './configurations/http.js';
             return response.status(200).json({message: 'server is running'});
         });
 
-        socket.on('connection', (io) => {
+        const io = socket.of('/api');
+
+        io.on('connection', (socket) => {
 
         });
 
