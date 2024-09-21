@@ -1,27 +1,20 @@
 import connection from './database/connection.js';
-import socket from './configurations/socket.js';
-import server, {router} from './configurations/express.js';
+import io from './configurations/socket.js';
+import {router} from './configurations/express.js';
 import http from './configurations/http.js';
 
 (async () => {
     try {
         await connection();
 
-        router.get('/', (_, response) => {
-            return response.status(200).json({message: 'server is running'});
-        });
-
-        const io = socket.of('/api');
-
         io.on('connection', (socket) => {
 
         });
 
-        server.use('/api', router);
-
-        server.all('*', (_, response) => {
-            return response.status(404).json({message: 'route not found'});
+        router.get('/', (_, response) => {
+            return response.status(200).json({message: 'server is running'});
         });
+
 
         http.listen(9060);
     } catch (error) {

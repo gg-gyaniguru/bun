@@ -1,5 +1,5 @@
 import connection from './database/connection.ts';
-import socket from './configurations/socket.ts';
+import io from './configurations/socket.ts';
 import server, {router} from './configurations/express.js';
 import http from './configurations/http.js';
 
@@ -7,20 +7,12 @@ import http from './configurations/http.js';
     try {
         await connection();
 
-        const io = socket.of('/api');
-
         io.on('connection', (socket) => {
 
         });
 
         router.get('/', (_, response) => {
             return response.status(200).json({message: 'server is running'});
-        });
-
-        server.use('/api', router);
-
-        server.all('*', (_, response) => {
-            return response.status(404).json({message: 'route not found'});
         });
 
         http.listen(9060);

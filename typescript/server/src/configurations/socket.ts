@@ -8,4 +8,6 @@ const socket = new Server(http, {
     }
 });
 
-export default socket;
+const io = socket.of('/api');
+
+export default io;
