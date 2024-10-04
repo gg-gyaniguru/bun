@@ -15,7 +15,6 @@ import http from './configurations/http.js';
             return response.status(200).json({message: 'server is running'});
         });
 
-
         http.listen(9060);
     } catch (error) {
         console.error(error.message);

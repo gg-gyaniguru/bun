@@ -1,6 +1,6 @@
 import connection from './database/connection.ts';
 import io from './configurations/socket.ts';
-import server, {router} from './configurations/express.js';
+import {router} from './configurations/express.js';
 import http from './configurations/http.js';
 
 (async () => {

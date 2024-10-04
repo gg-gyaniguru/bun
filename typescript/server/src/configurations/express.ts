@@ -10,6 +10,7 @@ server.use(express.json());
 server.use(express.urlencoded({extended: true}));
 server.use(upload());
 
+router.use('/static', express.static('static'));
 server.use('/api', router);
 
 server.all('*', (_, response) => {
