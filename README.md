@@ -4,15 +4,25 @@ This repository contains a full-stack MERN (MongoDB, Express, React, Node.js) te
 
 ## Features
 
-### Client (React)
-- **react**: Frontend framework
-- **react router dom**: For client-side routing
-- **tailwindcss**: For styling
-- **redux toolkit**: State management
+### Client
+- **react**: frontend framework
+- **react router dom**: for client-side routing
+- **tailwindcss**: for styling
+- **redux toolkit**: state management
+- **axios**: for request from backend
+- **socket.io client**: real-time communication between client and server
+- **sonner**: for toast
 
-### Server (Express)
-- **express**: Backend framework
-- **express-fileupload**: Middleware for handling file uploads
-- **mongoose**: NoSQL database for data storage
-- **jsonwebtoken**: For handling authentication and authorization using JWT
-- **socket.io**: Real-time communication between client and server
+
+### Server
+- **express**: backend framework
+- **express fileupload**: middleware for handling file uploads
+- **mongoose**: mongodb database for data storage
+- **jsonwebtoken**: for handling authentication and authorization using jwt
+- **socket.io**: real-time communication between client and server
+
+### Clone the repository
+
+```bash
+git clone https://github.com/gg-gyaniguru/bun.git
+```
