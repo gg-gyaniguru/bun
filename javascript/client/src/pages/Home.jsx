@@ -1,5 +1,7 @@
-import {useState} from "react";
 import {useSelector} from "react-redux";
+import axios from "axios";
+// import {useQuery} from "@tanstack/react-query";
+import {gql, useQuery} from "@apollo/client";
 
 const Home = () => {
 
@@ -8,7 +10,7 @@ const Home = () => {
     return (
         <>
             <div className={''}>
-                accessToken  {accessToken}
+                accessToken is {accessToken}
             </div>
         </>
     );

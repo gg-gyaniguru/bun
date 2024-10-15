@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <div className={''}>
-                {accessToken as string}
+                access token is {accessToken as string}
             </div>
         </>
     );

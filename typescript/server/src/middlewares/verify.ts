@@ -1,6 +1,6 @@
 import type {NextFunction, Response} from 'express';
 import type {CustomRequest} from "../interfaces/request.ts";
-import {verifyAccessToken} from "../utils/jsonwebtoken.ts";
+import {verifyAccessToken} from "../utilities/jsonwebtoken.ts";
 
 const verify = (request: CustomRequest, response: Response, next: NextFunction) => {
     try {
