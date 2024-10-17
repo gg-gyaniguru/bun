@@ -1,5 +1,6 @@
 import {useSelector} from "react-redux";
-import {State} from "../store";
+import {State} from '@/store';
+import Container from '@/components/Container.tsx';
 
 const Home = () => {
 
@@ -7,9 +8,11 @@ const Home = () => {
 
     return (
         <>
-            <div className={''}>
-                access token is {accessToken as string}
-            </div>
+            <Container>
+                <div className={''}>
+                    access token is {accessToken as string}
+                </div>
+            </Container>
         </>
     );
 };

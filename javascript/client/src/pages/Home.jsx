@@ -1,17 +1,26 @@
 import {useSelector} from "react-redux";
-import axios from "axios";
-// import {useQuery} from "@tanstack/react-query";
-import {gql, useQuery} from "@apollo/client";
+import Container from "@/components/Container.jsx";
+import {useEffect} from "react";
+import axios from "@/configurations/axios.js";
 
 const Home = () => {
 
     const accessToken = useSelector(state => state.accessToken.value);
 
+    useEffect(() => {
+        (async () => {
+            const {data} = await axios.get('');
+            console.log(data);
+        })();
+    }, []);
+
     return (
         <>
-            <div className={''}>
-                accessToken is {accessToken}
-            </div>
+            <Container>
+                <div className={''}>
+                    accessToken is {accessToken}
+                </div>
+            </Container>
         </>
     );
 };

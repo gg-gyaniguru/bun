@@ -2,13 +2,14 @@ import {ApolloServer} from "@apollo/server";
 
 const apollo = new ApolloServer({
     typeDefs: `
-        
         type Query {
-            
+            get: String!
         }
     `,
     resolvers: {
-        Query: {}
+        Query: {
+            get: () => 'apollo is running'
+        }
     }
 });
 

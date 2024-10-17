@@ -8,6 +8,12 @@
     "jsx": "react-jsx",
     "allowJs": true,
 
+    // Import alias
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

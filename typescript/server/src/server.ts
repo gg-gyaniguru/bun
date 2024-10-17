@@ -3,7 +3,7 @@ import io from './configurations/socket.ts';
 import {router} from './configurations/express.js';
 import http from './configurations/http.js';
 import {expressMiddleware} from "@apollo/server/express4";
-import apollo from "./configurations/apollo.ts";
+import apollo from './configurations/apollo.ts';
 
 (async () => {
     try {

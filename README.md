@@ -1,3 +1,4 @@
+
 # MERN Stack Template with Bun.js
 
 This repository contains a full-stack MERN (MongoDB, Express, React, Node.js) template built
