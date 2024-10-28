@@ -3,7 +3,8 @@
   "module": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "bun --watch src/server.js"
+    "dev": "bun --watch src/server.js",
+    "start": "bun run src/server.js"
   },
   "devDependencies": {
     "@types/bun": "latest"

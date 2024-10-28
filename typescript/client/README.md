@@ -9,7 +9,5 @@ bun install
 To run:
 
 ```bash
-bun start
+bun dev
 ```
-
-This project was created using `bun create vite` in bun v1.1.26. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.

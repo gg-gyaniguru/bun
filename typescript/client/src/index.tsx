@@ -1,22 +1,19 @@
-import {StrictMode} from 'react'
-import {createRoot} from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
-import {Provider} from "react-redux";
-import {ApolloProvider} from "@apollo/client";
-import apollo from "./configurations/apollo.ts";
-import {QueryClientProvider as QueryProvider} from "@tanstack/react-query";
-import query from "./configurations/query.js";
-import store from "./store";
+import {StrictMode as Strict} from 'react'
+import {createRoot as create} from 'react-dom/client'
+import App from './App.tsx'
+import Apollo from '@/providers/Apollo.tsx';
+import Query from '@/providers/Query.tsx';
+import Store from "@/providers/Store.tsx";
 
-createRoot(document.getElementById('root')!).render(
-    <StrictMode>
-        <ApolloProvider client={apollo}>
-            <QueryProvider client={query}>
-                <Provider store={store}>
+create(document.querySelector('.react')!).render(
+    <Strict>
+        <Apollo>
+            <Query>
+                <Store>
                     <App/>
-                </Provider>
-            </QueryProvider>
-        </ApolloProvider>
-    </StrictMode>
+                </Store>
+            </Query>
+        </Apollo>
+    </Strict>
 );
