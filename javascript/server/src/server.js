@@ -1,3 +1,5 @@
+bun-stack    bun create next-app
+
 import connection from './database/connection.js';
 import io from './configurations/socket.js';
 import {router} from './configurations/express.js';
@@ -19,7 +21,9 @@ import apollo from './configurations/apollo.js';
 
         router.use('/apollo', expressMiddleware(apollo));
 
-        http.listen(9060);
+        http.listen(9060, () => {
+            console.log('server is running on http://localhost:9060');
+        });
     } catch (error) {
         console.error(error.message);
     }
