@@ -40,8 +40,8 @@
 }
 
 [data-rich-colors=true][data-sonner-toast][data-type=success] {
-    color: rgb(0, 0, 0) !important;
-    background-color: rgb(34 197 94) !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(99 102 241) !important;
     border-color: rgba(255, 255, 255, 0) !important;
 }
 
