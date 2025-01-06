@@ -1,4 +1,4 @@
-import {useSelector} from "react-redux";
+import {useSelector} from 'react-redux';
 import {State} from '@/store';
 import Container from '@/components/Container.tsx';
 
@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             <Container>
-                <div className={''}>
+                <div className={'mt-6'}>
                     access token is {accessToken as string}
                 </div>
             </Container>

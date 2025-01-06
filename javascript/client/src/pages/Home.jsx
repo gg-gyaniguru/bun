@@ -21,20 +21,6 @@ const Home = () => {
                 <div className={'mt-6'}>
                     accessToken is {accessToken}
                 </div>
-                <div className={'mt-6 flex flex-col gap-3'}>
-                    <button className={'px-3 py-1.5 bg-neutral-800'}
-                            onClick={() => toast.success('success toast')}>success
-                    </button>
-                    <button className={'px-3 py-1.5 bg-neutral-800'}
-                            onClick={() => toast.error('error toast')}>error
-                    </button>
-                    <button className={'px-3 py-1.5 bg-neutral-800'}
-                            onClick={() => toast.info('info toast')}>info
-                    </button>
-                    <button className={'px-3 py-1.5 bg-neutral-800'}
-                            onClick={() => toast.warning('warning toast')}>warning
-                    </button>
-                </div>
             </Container>
         </>
     );

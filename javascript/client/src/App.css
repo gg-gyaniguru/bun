@@ -10,7 +10,7 @@
 
 :where([data-sonner-toast]) {
     transition-property: all !important;
-    transition-duration: .3s !important;
+    transition-duration: .15s !important;
     transition-timing-function: ease-in-out !important;
 }
 
