@@ -1,8 +1,7 @@
 import './App.css'
-import Container from "@/components/Container.tsx";
+import Container from '@/components/Container.tsx';
 
 const App = () => {
-
     return (
         <>
             <Container>
