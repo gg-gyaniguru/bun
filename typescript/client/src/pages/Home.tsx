@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             <Container>
-                <div className={'mt-6'}>
+                <div className={''}>
                     access token is {accessToken as string}
                 </div>
             </Container>

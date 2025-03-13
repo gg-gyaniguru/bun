@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-*{
+* {
     font-family: 'JetBrains Mono', monospace;
 }
 
@@ -9,6 +9,8 @@
 }
 
 :where([data-sonner-toast]) {
+    /*width: 90% !important;*/
+    /*margin: auto !important;*/
     transition-property: all !important;
     transition-duration: .3s !important;
     transition-timing-function: ease-in-out !important;
@@ -23,6 +25,7 @@
     font-size: 1rem !important;
     border-radius: 1rem !important;
     border: unset !important;
+
 }
 
 :where([data-sonner-toast]):where([data-content]) {

@@ -1,7 +1,7 @@
 import './App.css'
 import {createBrowserRouter, RouterProvider} from 'react-router';
 import Layout from './Layout.tsx';
-import Home from "./pages/Home.tsx";
+import Home from './pages/Home.tsx';
 
 const App = () => {
 
